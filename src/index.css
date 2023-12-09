@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.logo {
+
+  font-family: 'Dancing Script', cursive;
+}
+
+.custom-background {
+  position: relative;
+  width: 100%;
+  
+  background-image: url('https://dance.ingridtemplates.com/wp-content/uploads/sites/18/2021/03/young-modern-dancers-dancing-in-the-studio-e1617284564695.jpg');
+  background-size: cover;
+  /* background-position: center; */
+}
