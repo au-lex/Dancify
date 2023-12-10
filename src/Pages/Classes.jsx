@@ -14,9 +14,9 @@ const Classes = () => {
     <main className='    overflow-x-hidden'>
         <section className='relative'>
 
-        <span className='absolute left-4 top-4 z-50'>
+        <span className='absolute left-4 top-3 z-50'>
             <Link to={'/'}>
-            <IoArrowBackCircleSharp  className='text-[2.4rem] text-slate-100 '/>
+            <IoArrowBackCircleSharp  className='text-[1.8rem] text-slate-100 '/>
             </Link>
         </span>
         <div class="custom-background h-[18rem] lg:h-[30rem]">
@@ -25,8 +25,11 @@ const Classes = () => {
 
  
   <div class="absolute inset-0 flex items-center justify-center flex-col text-white">
-    <h1 class=" text-[3rem]">Dance Classes</h1>
-    <p class="text-lg">Your additional text above the overlay</p>
+    <div className='px-4'>
+
+    <h1 class=" text-[2.5rem] text-center">Dance Classes</h1>
+    <p class=" text-center">Embark on a Journey of Self-Discovery and Joy: Why Join Dancers4Life Club</p>
+    </div>
 
     <div className='w-full flex justify-center mt-[2rem] relative' >
 <div  className='absolute w-[58%] h-[5rem] animate-[ping_2s_ease-out_infinite] 
