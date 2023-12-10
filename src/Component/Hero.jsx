@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -23,7 +24,12 @@ const Hero = () => {
   <p> - Where Rhythm Meets Joy! -</p>
 <div className='mt-[1rem]'>
 
-  <button className='bg-orange-900 w-full py-[1rem] rounded'>Explore</button>
+  <button className='bg-orange-900 w-full py-[1rem] rounded'>
+    
+    <Link to={'/class'} >
+    Explore
+    </Link>
+    </button>
 </div>
    </div>
     

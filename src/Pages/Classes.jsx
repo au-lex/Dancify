@@ -1,5 +1,10 @@
 import React from 'react'
 import classData from '../classData'
+import { Link } from 'react-router-dom'
+import { IoArrowBackCircleSharp } from "react-icons/io5";
+
+
+
 
 const Classes = () => {
   return (
@@ -7,7 +12,13 @@ const Classes = () => {
     
     
     <main className='    overflow-x-hidden'>
-        <section>
+        <section className='relative'>
+
+        <span className='absolute left-4 top-4 z-50'>
+            <Link to={'/'}>
+            <IoArrowBackCircleSharp  className='text-[2.4rem] text-slate-100 '/>
+            </Link>
+        </span>
         <div class="custom-background h-[18rem] lg:h-[30rem]">
  
   <div class="absolute inset-0 bg-black opacity-80"></div>
@@ -38,17 +49,21 @@ top-[-.6rem] rounded-[8]
 
 {classData.map((value, idx) => (
   <div key={idx} className='' >
-    <section className=' '>
+    <section className='px-3 mt-4  shadow-md'>
         <div className=''> 
 
-      <img src={value.Image} alt="" className='w-full ' />
+      <img src={value.Image} alt="" className='w-full rounded-[10px] ' />
         </div>
-      <h1 className='text-xl font-bold'>{value.title}</h1>
-      <p className='text-sm'>{value.Description.substring(0, 120) + '......'}</p>
+      <h1 className='text-[1.5rem] pt-2 font-bold'>{value.title}</h1>
+      <p className='text-sm py-2'>{value.Description.substring(0, 150) + '......'}</p>
 
-      {/* <p className='text-sm '>{value.Description}.substring((0, 120)) + '...';</p> */}
+   
       <div className='my-4'>
-        <button className='bg-red-500  py-2 px-4 w-[50%] text-white'>Explore</button>
+      <Link to={`/Adetail/${value.title}`}>
+  <button className='cursor-pointer border-slate-900 border py-3 px-4 w-[50%] mb-4 rounded-md shadow-md'>Explore Details</button>
+</Link>
+
+     
       </div>
     </section>
   </div>
