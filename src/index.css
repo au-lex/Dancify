@@ -33,3 +33,17 @@ h1,h2,h3,h4,h5,h6 {
   background-size: cover;
   /* background-position: center; */
 }
+
+
+.con {
+  /* display: none; */
+  opacity: 0;
+  height: 0rem;
+  transition: .4s ease;
+}
+
+.con.active {
+  /* display: block; */
+  opacity: 1;
+  height: 20rem;
+}
