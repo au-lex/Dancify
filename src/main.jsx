@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Classes from './Pages/Classes.jsx';
 import Event from './Pages/Event.jsx';
+import Classdetail from './Pages/Classdetail.jsx';
 
 
 
@@ -28,10 +29,14 @@ const router = createBrowserRouter([
     path: "/event",
     element: <Event />
   },
+
+
   {
-    path: "/class",
-    element: <Classes />
+    path: "/Adetail/:Adetails",
+    element: <Classdetail />
   },
+  
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
