@@ -1,18 +1,24 @@
 import React from 'react'
 import { FaCartShopping } from "react-icons/fa6";
 import { TbSmartHome } from "react-icons/tb";
+import { SlLocationPin } from "react-icons/sl";
+import { useState, useEffect } from 'react';
+import EventData from '../Component/EventData'
+
 import { Link } from 'react-router-dom';
 
-import EventData from '../Component/EventData'
+
 
 
 
 const Event = () => {
+  
+     
   return (
     <>
 
 
-<main>
+<main className='mb-[4rem]'>
     <header className='bg-orange-800 h-[4rem] w-full'>
 
         <div className='flex justify-between px-[1rem]  pt-[1rem]'>
@@ -38,7 +44,7 @@ const Event = () => {
   </div>
 
   <section className='mt-4'>
-    <h1 className='bg-red-500 w-[70%] text-center py-4 text-white text-[20px] font-semibold'>Upcomming Events</h1>
+    <h1 className='bg-red-500 w-[60%] text-center py-2 text-white text-[18px] font-semibold'>Upcomming Events</h1>
   </section>
 
 <figure className='flex flex-wrap'>
@@ -46,18 +52,24 @@ const Event = () => {
     {EventData.map((events, idx) =>{
         return (
 
-            <section className='flex px-[.5rem] mt-8 '>
+            <section key={idx} className='flex px-[.5rem] mt-8   shadow-md pb-4 w-full '>
                 <div className='h-[100px] w-[200px] '>
 
-<img src={events.image} alt=""  className='w-full h-[7rem] rounded-[5px] object-cover  '/>
+<img src={events.image} alt=""  className='w-full h-[7rem] rounded-[15px] object-cover  '/>
                 </div>
-<figcaption className=''>
+<figcaption className=' ml-2'>
 
            <p>{events.name}</p>
 
-           <div>
-            
+           <div className='my-2'>
+           <p className='flex' > <span className='pt-1 mr-1'><SlLocationPin className='text-red-500' /></span> {events.venue}</p>
            </div>
+           <button className='w-full py-2  rounded-[10px] border border-orange-900'>
+            <Link to={`/Edetail/${events.name}`}>
+            Buy Ticket
+
+            </Link>
+            </button>
            {/* <p>{events.description.substring(0, 0) + '.......'}</p> */}
 </figcaption>
 
