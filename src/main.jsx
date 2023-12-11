@@ -9,6 +9,7 @@ import {
 import Classes from './Pages/Classes.jsx';
 import Event from './Pages/Event.jsx';
 import Classdetail from './Pages/Classdetail.jsx';
+import Eventdetail from './Pages/Eventdetail.jsx';
 
 
 
@@ -34,6 +35,13 @@ const router = createBrowserRouter([
   {
     path: "/Adetail/:Adetails",
     element: <Classdetail />
+  },
+
+
+
+  {
+    path: "/Edetail/:Edetails",
+    element: <Eventdetail />
   },
   
 
