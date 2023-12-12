@@ -49,7 +49,9 @@ const Classdetail = () => {
 
             <div className='my-4'>
                 <button className='bg-orange-800 border text-white  w-full rounded-[5px] py-[.5rem] 
-                text-[25px] font-semibold'>Enroll Now</button>
+                text-[25px] font-semibold'> <Link to={'/che'}>
+                Enrol now 
+                </Link></button>
             </div>
             </div>
         </div>
