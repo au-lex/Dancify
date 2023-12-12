@@ -36,8 +36,9 @@ const Classes = () => {
 top-[-.6rem] rounded-[8]    
  bg-red-800 opacity-70  '></div>
     <button className='w-[50%] rounded-[8px]  py-4  bg-red-600 z-50 '>
-    
+    <Link to={'/che'}>
         Enrol now 
+        </Link>
     </button>
     </div>
   </div>
@@ -46,7 +47,7 @@ top-[-.6rem] rounded-[8]
         </section>
 
 
-<div className='' >
+<div className=' flex flex-wrap lg:flex-nowrap' >
  
 
 

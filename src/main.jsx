@@ -10,7 +10,7 @@ import Classes from './Pages/Classes.jsx';
 import Event from './Pages/Event.jsx';
 import Classdetail from './Pages/Classdetail.jsx';
 import Eventdetail from './Pages/Eventdetail.jsx';
-import Cart from './Pages/Cart.jsx';
+import Reg from './Pages/Reg.jsx';
 import Checkout from './Pages/Checkout.jsx';
 
 
@@ -51,6 +51,16 @@ const router = createBrowserRouter([
     path: "/checkout",
     element: <Checkout />
   },
+
+  {
+    path: "/che",
+    element: <Reg />
+  },
+
+  // {
+  //   path: "/cat",
+  //   element: <Cart />
+  // },
 
 ])
 

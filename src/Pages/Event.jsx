@@ -90,10 +90,10 @@ SetopenMen(!OpenMen)
           </div>
         </section>
 
-        <figure className='flex flex-wrap'>
+        <figure className='flex flex-wrap  justify-between  lg:px-[2rem]'>
           {EventData.map((event, idx) => {
             return (
-              <section key={idx} className='flex px-[.5rem] mt-8 shadow-md pb-4 w-full'>
+              <section key={idx} className='flex px-[.5rem] mt-8 shadow-md pb-4 '>
                 <div className='h-[100px] w-[200px] '>
                   <img
                     src={event.image}
