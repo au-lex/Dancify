@@ -6,7 +6,7 @@ const Dancedata = [
         Description: 'Get ready to unleash your inner groove in our 10-week Hip-hop dance class (3 sessions per week). From breaking to popping, our experienced instructors will not only teach you the latest moves but also immerse you in the culture and history of hip-hop dance. Join this high-energy, dynamic class to master the foundations and freestyle with confidence on the dance floor',
         StartDate: 'April 20th, 2024',
         Duration: '10 weeks (3 sessions per week)',
-        Price: '$120 ',
+        Price: '$120',
         Image: 'https://themeholy.com/html/danza/demo/assets/img/blog/blog-s-1-4.jpg'
       },
 
