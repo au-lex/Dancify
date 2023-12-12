@@ -7,10 +7,10 @@ const Hero = () => {
     
 <main >
 
-<section className='relative'>
+<section className='relative overflow-y-hidden'>
 
     <img 
-    className='h-[30rem] w-full object-cover'
+    className=' h-[100vh] w-full object-cover   '
     
     src="https://dance.ingridtemplates.com/wp-content/uploads/sites/18/2021/04/break-dance-1.jpg" alt="" />
    
